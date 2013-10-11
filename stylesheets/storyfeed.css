@@ -1,5 +1,6 @@
 body{
 	background:#fff;
+	font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 ol{
@@ -12,4 +13,10 @@ ol.tumblr_posts{
 	list-style:none;
 }	
 
+.tumblr_post{
+	border-bottom:1px solid rgb(232,232,232);
+}
 
+.tumblr_title{
+	font-weight:bold;
+}
