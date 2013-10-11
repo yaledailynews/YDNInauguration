@@ -5,7 +5,7 @@ function synch() {
     $('#leftframe').width($('#tumblrfeed').width());
     
 
-    setHeight($('.twitter-timeline'), $('#tumblrfeed'));
+    setHeight($('.twitter-timeline'), $('#leftframe'));
 }
 
 setInterval(synch, 500);
