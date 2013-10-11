@@ -1,8 +1,8 @@
 function synch() {
 
     
-        $('#leftframe').height($('#leftframe').contents().height());
-        $('#leftframe').width($('#leftframe').contents().width());
+    $('#leftframe').height($('#leftframe').contents().height());
+  //  $('#leftframe').width($('#leftframe').contents().width());
     
 
     setHeight($('.twitter-timeline'), $('#tumblrfeed'));
