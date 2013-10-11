@@ -1,21 +1,22 @@
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://rawgithub.com/padolsey/jquery.fn/master/cross-domain-ajax/jquery.xdomainajax.js"></script>
 <script>
 
 var tlog = "";
 
 function lookforchanges()
 {
-$.get( "jslook.html", checkdiff);
+$.get( "http://xcampus.tumblr.com/js", checkdiff);
 }
 
 function checkdiff(data)
 {
 if (data) {
- if (data != tlog){
- tlog = data;
- $( ".tumblr_posts" ).remove();
- $.getScript('http://xcampus.tumblr.com/js');
+ if (data.responseText != tlog){
+ tlog = data.responseText;
+ $( ".tumblframe" ).remove();
+ $("body").append("<iframe src='http://ydntech.github.io/YDNInauguration/jslook.html' class='tumblframe'></iframe>");
  }
 }
 }
