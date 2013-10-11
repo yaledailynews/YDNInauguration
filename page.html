@@ -1,0 +1,30 @@
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+
+var tlog = "";
+
+function lookforchanges()
+{
+$.get( "jslook.html", checkdiff);
+}
+
+function checkdiff(data)
+{
+if (data) {
+ if (data != tlog){
+ tlog = data;
+ $( ".tumblr_posts" ).remove();
+ $.getScript('http://xcampus.tumblr.com/js');
+ }
+}
+}
+
+setInterval(lookforchanges, 5000);
+
+
+</script>
+</head>
+
+<body>
+</body>
