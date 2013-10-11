@@ -1,3 +1,15 @@
 body{
-	background-color:#fff;
+	background:#fff;
 }
+
+ol{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+ol.tumblr_posts{
+	list-style:none;
+}	
+
+
