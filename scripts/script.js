@@ -45,3 +45,8 @@ setInterval(lookforchanges, 30000);
         fjs.parentNode.insertBefore(js, fjs);
     }
 }(document, "script", "twitter-wjs");
+
+$('#leftframe').load(function () {
+    $(this).height($(this).contents().height());
+    $(this).width($(this).contents().width());
+});
