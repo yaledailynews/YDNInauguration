@@ -28,7 +28,7 @@ function checkdiff(data) {
             tlog = data.responseText;
             document.getElementById("leftframe").contentDocument.location.reload(true);
             // $( ".tumblframe" ).remove();
-            // $("body").append("<iframe src='http://ydntech.github.io/YDNInauguration/jslook.html' class='tumblframe'><\/iframe>");
+            // $("body").append("<iframe src='http://ydntech.github.io/YDNInauguration/storyfeed.html' class='tumblframe'><\/iframe>");
         }
     }
 }
