@@ -1,11 +1,10 @@
 function synch() {
 
-    
-    $('#leftframe').height($('#leftframe').contents().height());
     $('#leftframe').width($('#tumblrfeed').width());
+    $('#leftframe').height($('#leftframe').contents().height());
     
 
-    setHeight($('.twitter-timeline'), $('#leftframe'));
+    setHeight($('.twitter-timeline'), $('#tumblrfeed'));
 }
 
 setInterval(synch, 500);
