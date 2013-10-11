@@ -1,6 +1,10 @@
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://rawgithub.com/padolsey/jquery.fn/master/cross-domain-ajax/jquery.xdomainajax.js"></script>
+<style>
+html, body, div, iframe { margin:0; padding:0; height:100%; }
+iframe { position:fixed; display:block; width:100%; border:none; }
+</style>
 <script>
 
 var tlog = "";
@@ -22,6 +26,8 @@ if (data) {
 }
 
 setInterval(lookforchanges, 5000);
+
+$( document ).ready(lookforchanges);
 
 
 </script>
