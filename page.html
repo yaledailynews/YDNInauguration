@@ -19,19 +19,18 @@ function checkdiff(data)
 if (data) {
  if (data.responseText != tlog){
  tlog = data.responseText;
- $( ".tumblframe" ).remove();
- $("body").append("<iframe src='http://ydntech.github.io/YDNInauguration/jslook.html' class='tumblframe'></iframe>");
+ document.getElementById("leftframe").contentDocument.location.reload(true);
+// $( ".tumblframe" ).remove();
+// $("body").append("<iframe src='http://ydntech.github.io/YDNInauguration/jslook.html' class='tumblframe'></iframe>");
  }
 }
 }
 
 setInterval(lookforchanges, 5000);
 
-$( document ).ready(lookforchanges);
-
-
 </script>
 </head>
 
 <body>
+<iframe src='http://ydntech.github.io/YDNInauguration/jslook.html' class='tumblframe' id = 'leftframe'></iframe>
 </body>
