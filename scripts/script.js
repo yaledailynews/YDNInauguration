@@ -2,13 +2,13 @@ function synch() {
 
     
     $('#leftframe').height($('#leftframe').contents().height());
-  //  $('#leftframe').width($('#leftframe').contents().width());
+    $('#leftframe').width($('#tumblrfeed').width());
     
 
     setHeight($('.twitter-timeline'), $('#tumblrfeed'));
 }
 
-setInterval(synch, 1000);
+setInterval(synch, 500);
 
 // sets height of element 1 to equal the height of element 2
 function setHeight(elem1, elem2) {
