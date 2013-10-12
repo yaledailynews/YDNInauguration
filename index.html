@@ -1,65 +1,97 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+
 <html lang="en">
+<!--<![endif]-->
+
 <head>
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
 
-<style>
-html, body {
-	font-family:Georgia, "Times New Roman", Times, serif;
-	color:#FFFFFF;
-	font-size:20px;
-	margin:0;
-background-color: #0B0F11;
-}
+    <title>The Inauguration of Yale's 23rd President</title>
+    <meta content="" name="description">
+    <meta content="" name="author"><!-- Mobile Specific Metas
+  ================================================== -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name=
+    "viewport">
+    <link rel="icon" type="image/gif" href="http://ydn.wpengine.netdna-cdn.com/wp-content/themes/yaledailynews/ydn-logo.gif"><!-- CSS
+  ================================================== -->
+    <link href="stylesheets/base.css" rel="stylesheet">
+    <link href="stylesheets/skeleton.css" rel="stylesheet">
+    <link href="stylesheets/layout.css" rel="stylesheet">
+    <link href="stylesheets/custom.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-
-
-#wrapper {
-	display:block;
-	width:750px;
-	margin:100px auto;
-	padding:0 20px;
-	height:570px;
-}
-
-h1 {
-	position:relative;
-    font-weight: normal;
-	font-size:76px;
-	text-align:center;
-	height:80px;
-	padding-top:30px;
-	margin-bottom: 0;
-}
-
-h2 {
-	position:relative;
-	top:10px;
-	font-size:35px;
-	text-align:center;
-    font-weight: normal;
-	padding-bottom: 25px;
-}
-
-nanxal {color: #1b6cf2;}
-
-p {line-height:24px;}
-a {text-decoration:none; border-bottom:none;}
-a{color: #1B6CF2;}
-a:hover {border-bottom:1px solid #76a7f7; cursor:pointer;}
-
-</style>
-
-	<meta charset="utf-8">
-	<title>Check back later</title>
-
-
-
-
+    <!-- Favicons
+    ================================================== -->
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon"
+    sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon"
+    sizes="114x114">
+    <script src=
+    "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://rawgithub.com/padolsey/jquery.fn/master/cross-domain-ajax/jquery.xdomainajax.js"></script>
+	<script src="scripts/script.js"></script>
 </head>
+
 <body>
+    <!-- Primary Page Layout
+    ================================================== -->
+    <!-- Delete everything in this .container and get started on your own site! -->
 
-		<h1 style="margin-top: 100px;">Check back after 10 a.m. on Saturday morning.</h1>
-		<h2 style="margin-top: 100px;">Go back to <a href = "http://yaledailynews.com">The Yale Daily News</a></h2>
+    <div class="container">
 
+        <div class="row centered" id="ydnlogo">
+        	</br>
+        	<a href="http://yaledailynews.com">
+        		<img id="logoimg" src="ydnlogogrey.png"/>
+        	</a>
+        </div>
+
+        <div class="row centered" id="maintitle">
+            <h1>The Salovey Inauguration</h1>
+
+            <h3>As told by the Yale Daily News</h3>
+        </div>
+
+        <div class="row centered" id="subtitle">
+            <h2>October 12-13, 2013</h2>
+        </div>
+        <hr>
+
+        <div class="row" id="main">
+            <div class="eleven columns" id="tumblrfeed">
+                <h3 class="centered">Latest Stories</h3>
+
+                <iframe src='http://inauguration.yaledailynews.com/storyfeed.html' class='tumblframe' id = 'leftframe' allowtransparency = 'false' styles = 'border:none;'></iframe>
+            </div>
+
+            <div class="five columns">
+                <h3>#yale23</h3><a class="twitter-timeline" data-dnt="true"
+                data-widget-id="388584592354992128" href=
+                "https://twitter.com/yaledailynews">Tweets by
+                @yaledailynews</a> 
+            </div>
+        </div><!-- container -->
+
+        <footer class="site-footer container centered" id="colophon">
+            <div class="double-border"></div>
+
+            <div class="pull-right" id="footer">
+                © 2013 Yale Daily News • <a href=
+                "http://yaledailynews.com/rights-permissions/">All Rights
+                Reserved</a> • Created by Soham Sankaran &amp; Vincent Hu
+            </div><!-- .site-info -->
+        </footer><!-- End Document
+================================================== -->
+    </div>
 </body>
 </html>
